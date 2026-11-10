@@ -1,0 +1,9 @@
+<script>
+fetch('https://<laburl>/accountDetails', {
+    credentials: 'include'
+})
+.then(res => res.json())
+.then(data => {
+    location = '/log?key=' + encodeURIComponent(data.apikey);
+});
+</script>
